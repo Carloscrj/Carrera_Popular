@@ -57,7 +57,7 @@ import mvc.view.VCorredor;
 				Corredor corredor = poIntroducir.obtenerCorredor(); //almacenamos los datos con este objeto a trav�s del m�todo y despu�s
 				liCorredores.nuevoCorredor(corredor);//a�adimos al ArrayList del pojo ListaEncuestas, una nueva encuesta con los datos obtenido en la l�nea anterior
 				if ( corredor!= null) {
-					poIntroducir.mostrarMensaje("Corredor almacenado", "Guardar Corredor");
+					poIntroducir.mostrarMensaje("Corredores almacenados", "Guardar Corredores");
 				}
 				
 			} else if (e.getActionCommand().equals(PanelIntroducir.LIMPIAR_DATOS)) {
