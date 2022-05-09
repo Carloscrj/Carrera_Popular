@@ -43,7 +43,7 @@ import mvc.view.VCorredor;
 				poConsultar.hacerVisibleScrp(false);
 			} else if (e.getActionCommand().equals(VCorredor.MNTN_SALIR)) {
 				int resp=JOptionPane.showConfirmDialog(ventana,
-						"Se va a cerrrar la aplicación, ¿Desea continuar?",
+						"Se va a cerrrar la aplicaciï¿½n, ï¿½Desea continuar?",
 						"Confirmar salida",
 						JOptionPane.YES_NO_OPTION,
 						JOptionPane.INFORMATION_MESSAGE);
@@ -52,12 +52,12 @@ import mvc.view.VCorredor;
 						}
 				
 			} 
-		}else if (e.getSource() instanceof JButton) { //si el componente en el que se ha producido el evento es un botón
-			if (e.getActionCommand().equals(PanelIntroducir.GUARDAR_CORREDOR)) { //así identifico que se ha seleccionado el botón limpiar
-				Corredor corredor = poIntroducir.obtenerCorredor(); //almacenamos los datos con este objeto a través del método y después
-				liCorredores.nuevoCorredor(corredor);//añadimos al ArrayList del pojo ListaEncuestas, una nueva encuesta con los datos obtenido en la línea anterior
+		}else if (e.getSource() instanceof JButton) { //si el componente en el que se ha producido el evento es un botï¿½n
+			if (e.getActionCommand().equals(PanelIntroducir.GUARDAR_CORREDOR)) { //asï¿½ identifico que se ha seleccionado el botï¿½n limpiar
+				Corredor corredor = poIntroducir.obtenerCorredor(); //almacenamos los datos con este objeto a travï¿½s del mï¿½todo y despuï¿½s
+				liCorredores.nuevoCorredor(corredor);//aï¿½adimos al ArrayList del pojo ListaEncuestas, una nueva encuesta con los datos obtenido en la lï¿½nea anterior
 				if ( corredor!= null) {
-					poIntroducir.mostrarMensaje("Receta guardada", "Guardar Receta");
+					poIntroducir.mostrarMensaje("Corredor almacenado", "Guardar Corredor");
 				}
 				
 			} else if (e.getActionCommand().equals(PanelIntroducir.LIMPIAR_DATOS)) {
